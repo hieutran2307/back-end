@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link href="assets/css/main.css" rel="stylesheet" type="text/css"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <script src="assets/js/jquery.min.js" type="application/javascript"></script>
+    <script src="assets/js/bootstrap.min.js" type="application/javascript"></script>
+    <script src="js/library/go-debug.js" type="application/javascript"></script>
+    <script src="js/main.js" type="application/javascript"></script>
+    <script src="js/dijkstras.js" type="application/javascript"></script>
+    <script src="js/maps.js" type="application/javascript"></script>
+    <script src="js/common.js" type="application/javascript"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVSVCiGgd4YIOnMXLvtZU3HQfR8QoJ3zQ&callback=initMap"
+            async defer></script>
+
+</head>
+<body>
+  
+  
+        <div class="container" >
+               
+            <div class="row" id="defaultOpen" >
+                <div class="col-md-3">
+                    <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div style="padding: 5px">
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <label for="from">From: </label>
+                                            <select class="form-control" name="from" id="from_address"></select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="to">To: </label>
+                                            <select class="form-control" name="to" id="to_address"></select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <button type="button" class="btn btn-success" id="btnFindPath">Find Path</button>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div style="width:500px;height:800px; float: right; top: 5px;">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+   
+
+</body>
+</html>

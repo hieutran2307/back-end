@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- custom CSS after bootstrap -->
+    <link href="assets/css/main.css" rel="stylesheet" type="text/css"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+
+    <script src="assets/js/jquery.min.js" type="application/javascript"></script>
+    <script src="assets/js/bootstrap.min.js" type="application/javascript"></script>
+    <script src="js/library/go-debug.js" type="application/javascript"></script>
+    <script src="js/main.js" type="application/javascript"></script>
+    <script src="js/dijkstras.js" type="application/javascript"></script>
+    <script src="js/maps.js" type="application/javascript"></script>
+    <script src="js/common.js" type="application/javascript"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVSVCiGgd4YIOnMXLvtZU3HQfR8QoJ3zQ&callback=initMap"
+            async defer></script>
+</head>
+<body>
+ 
+
+    <div id="Maps" class="tabcontent">
+           <a href="#" class="tablinks" onclick="openTabs(event, 'Maps')" id="defaultOpen"></a>
+
+        <div class="container" >
+            <div class="row" >
+                <div class="">
+                    <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div style="padding: 5px">
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <label for="from">Chọn điểm đi: </label>
+                                            <select class="form-control" name="from" id="from_address"></select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="to">Chọn điểm đến: </label>
+                                            <select class="form-control" name="to" id="to_address"></select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <button style="float: right"  type="button" class="btn btn-success" id="btnFindPath">Tìm kiếm</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div style="width:900px;height:400px; float: right; top: 5px;">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
